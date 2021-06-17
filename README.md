@@ -129,3 +129,26 @@ int main()
 	else if(n<60)printf("F\n");
 }
 ```
+```C
+13-1
+void setup(){
+  size(1024,400);
+}
+void draw(){
+  if (mousePressed) background(51,146,203); 
+  else background(51,203,128);
+}
+```
+```C
+13-2
+size(1024,400) 
+ background(51,203,128);
+```
+```C
+13-3
+void setup(){//只做一次設定
+  size(1024,400);
+}
+void draw(){//互動版本每秒畫60次
+  if (mousePressed) background(51,146,203); //按下去淺藍
+  else background(51,203,128);//否則淺綠
